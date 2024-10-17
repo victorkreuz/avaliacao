@@ -1,7 +1,18 @@
-att1
+att1 - Um algoritmo é uma sequência de instruções ordenadas de forma lógica para a resolução de uma determinada tarefa ou problema. Segundo Knuth, "Um conjunto finito de regras que provê uma sequência de operações para resolver um tipo de problema específico".
 
-att2
 
-att3
+att2 - Variáveis são alocações de memória nas quais podemos guardar dados. Cada variável conta com um nome, tipo e valor.
 
-att4
+
+att3 - "public" é o modificador de acesso;
+"double" é o tipo de retorno;
+"fazerDeposito" é o nome do método seguido pelos parâmetros que se encontram entre parênteses.
+
+
+att4 - Existem três tipos de laços de repetição, são eles: o Laço For, o Laço While e o Laço Do While.
+
+Laço For - Pode ser utilizado quando você sabe a quantidade de vezes a parte do código deve ser repetida, informando-a ao For.
+
+Laço While - Significa "enquanto", pode ser utilizado quando não se sabe ao certo a quantidade de vezes que o código deve ser repetido, esse laço para o código quando ele estiver compatível com os parâmetros propostos no While.
+
+Laço Do While - Significa "Faça X enquanto (condição)", pode ser utilizado quando você quer que o código funcione ou se repita perante uma condição.
