@@ -110,9 +110,7 @@ public class Avaliacao {
     public void relatorioProdutosNaoConsertados() {
         System.out.println("_- RELATÓRIO DE PRODUTOS CONSERTADOS -_");
         for (int i = 0; i < listaProdutos; i++) {
-            if (consertado[i] != false) {
-                System.out.println("O produto " + produto[i] + " está consertado");
-            } else {
+            if (!consertado[i]) {
                 System.out.println("O produto " + produto[i] + " não está consertado");
             }
         }
@@ -120,9 +118,7 @@ public class Avaliacao {
 
     public void relatorioProdutosConsertadosNaoEntregues() {
         for (int i = 0; i < listaProdutos; i++) {
-            if (entregue[i] != false) {
-                System.out.println("O produto " + produto[i] + " foi entregue.");
-            } else {
+            if (consertado[i] && !entregue[i]) {
                 System.out.println("O produto " + produto[i] + " não foi entregue.");
             }
         }
@@ -131,7 +127,6 @@ public class Avaliacao {
     public void faturamentoLoja() {
         for (int i = 0; i < listaProdutos; i++) {
             faturamento = valorConserto[i] + faturamento;
-
         }
         System.out.println("O faturamento total é de: " + faturamento);
     }
